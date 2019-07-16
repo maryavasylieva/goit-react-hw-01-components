@@ -7,6 +7,7 @@ import pricingPlan from './assets/princingPlan.json';
 import Profile from './components/Profile/Profile';
 import Stats from './components/Stats/Stats';
 import PricingPlan from './components/PrincingPlan/PricingPlan';
+// eslint-disable-next-line import/extensions
 import TransactionTable from './components/Transaction/TransactionTable.js';
 
 function App() {
