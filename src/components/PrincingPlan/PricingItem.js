@@ -5,11 +5,14 @@ import styles from './PricingPlan.module.css';
 const PricingItem = ({ label, icon, capacity, price, description }) => (
   <div className={styles.pricingItem}>
     <i className={styles.icon} style={{ backgroundImage: `url(${icon})` }} />
-    <h2 className={styles[`label${label}`]}>{label}</h2>
+    <h2 className={`${styles.label} ${styles[`label${label}`]}`}>{label}</h2>
     <p className={styles.capacity}>{capacity} storage</p>
     <p className={styles.description}>{description}</p>
     <p className={styles.price}>&#36;{price}/MO</p>
-    <button type="button" className={styles[`button${label}`]}>
+    <button
+      type="button"
+      className={`${styles.button} ${styles[`button${label}`]}`}
+    >
       Get Started
     </button>
   </div>

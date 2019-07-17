@@ -3,10 +3,12 @@ import PropTypes from 'prop-types';
 import PricingItem from './PricingItem';
 import styles from './PricingPlan.module.css';
 
+const shortid = require('short-id');
+
 const PricingPlan = ({ items }) => (
   <ul className={styles.pricingPlan}>
     {items.map(item => (
-      <li key={item.id} className={styles.item}>
+      <li key={shortid.generate()} className={styles.item}>
         <PricingItem
           label={item.label}
           icon={item.icon}
