@@ -1,7 +1,7 @@
 import React from 'react';
 
-import styles from './Profile.module.css';
 import PropTypes from 'prop-types';
+import styles from './Profile.module.css';
 
 const UserInfo = ({ user }) => (
   <div className={styles.description}>
